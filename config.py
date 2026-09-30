@@ -21,6 +21,7 @@ class Config:
     min_agent_distance: float = 1.5
     obstacle_margin: float = 1.0
     deadlock_threshold: int = 10
+    flow_recompute_interval: int = 5
 
     agent_speed: float = 1.0
     max_battery: float = 100.0
