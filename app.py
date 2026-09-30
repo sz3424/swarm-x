@@ -301,8 +301,8 @@ def render_control_panel(swarm: Swarm, metrics: MetricsCollector,
     scenario_name = st.sidebar.selectbox(
         "Scenario",
         ["round1", "round2", "final"],
-        index=["round1", "round2", "final"].index(swarm.current_scenario.name) 
-        if swarm.current_scenario else 0
+        index=["round1", "round2", "final"].index(swarm.current_scenario.name)
+if swarm and swarm.current_scenario else 0
     )
     
     # Agent count
@@ -502,7 +502,7 @@ def main() -> None:
                     break
     
     # Auto-rerun
-    time_sleep = max(0.01, 1.0 / sim_speed)
+    time_sleep = max(0.01, 1.0 / st.session_state.get('sim_speed', 60))
     # Don't auto-render continuously - let user control
     # The simulation runs on button press
 

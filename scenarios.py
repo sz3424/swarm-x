@@ -2,7 +2,8 @@ from __future__ import annotations
 
 import numpy as np
 from typing import Dict, List, Tuple
-from models import Config, Task, TaskStatus, Agent, AgentStatus
+from config import Config
+from models import Task, TaskStatus, Agent, AgentStatus
 
 
 class Scenario:

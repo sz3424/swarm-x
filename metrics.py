@@ -4,7 +4,8 @@ import json
 import time
 from typing import Dict, List, Any
 from dataclasses import dataclass, field, asdict
-from models import Config, Agent, Task, TaskStatus, AgentStatus
+from config import Config
+from models import Agent, Task, TaskStatus, AgentStatus
 
 
 @dataclass

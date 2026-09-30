@@ -2,7 +2,8 @@ from __future__ import annotations
 
 import numpy as np
 from typing import Dict, List, Tuple, Optional
-from models import Config, Agent, Obstacle, Hazard, Task, TaskStatus, AgentStatus
+from config import Config
+from models import Agent, Obstacle, Hazard, Task, TaskStatus, AgentStatus
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
